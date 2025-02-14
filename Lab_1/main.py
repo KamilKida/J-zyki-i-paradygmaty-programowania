@@ -16,21 +16,22 @@ if __name__ == '__main__':
 
     # liczba_kursow, kursy = podziel_paczki(wagi, max_waga)
 
-    # print(f"Liczba kurów: {liczba_kursow}")
+    # print(f"Liczba kursów: {liczba_kursow}")
     # for i, kurs in enumerate(kursy, 1):
     #     print(f"Kurs {i}: {kurs} - suma wag: {sum(kurs)} kg.")
 
     
-    # # zad2.
-    # graph = {
-    #     'A': ['B', 'C'],
-    #     'B': ['A', 'D', 'E'],
-    #     'C': ['A', 'F'],
-    #     'D': ['A'],
-    #     'E': ['B', 'F'],
-    #     'F': ['C', 'E']
-    # }
-    # print(bfs_shortest_path(graph,'A', 'F'))
+    # zad2.
+    graph = {
+        'A': ['B', 'C'],
+        'B': ['A', 'D', 'E'],
+        'C': ['A', 'F'],
+        'D': ['A'],
+        'E': ['B', 'F'],
+        'F': ['C', 'E']
+    }
+     
+    print(bfs_shortest_path(graph,'A', 'F'))
     
 
     # #zad3
@@ -55,6 +56,6 @@ if __name__ == '__main__':
     # print(sortBackPackFunction(tuple(items), capacity))
 
     #zad5
-    tasks = [(1, 3, 5), (2, 5, 6), (4, 6, 5), (7, 8, 3), (6, 9, 9)]
-    print(tasksOrginizeProcedure(tasks))
-    print(tasksOrginizeFunctional(tasks))
+    # tasks = [(1, 3, 5), (2, 5, 6), (4, 6, 5), (7, 8, 3), (6, 9, 9)]
+    # print(tasksOrginizeProcedure(tasks))
+    # print(tasksOrginizeFunctional(tasks))
